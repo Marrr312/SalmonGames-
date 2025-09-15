@@ -1,0 +1,249 @@
+:root {
+    --colour-lightblue: #e0eaf5;
+    --colour-darkblue: #0d2137;
+    --colour-orange: #ff8e2b;
+}
+.nav {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color:#424242;
+    position: fixed;
+    width: 100%;
+   padding-top: 80px;
+   display: flex;
+   margin-top: 0px;
+   z-index: 90;
+}
+.logo-top      {
+    display: inline;
+    margin-top: 0px;
+    position: fixed;
+    z-index: 100;
+}
+
+        body {
+            margin: 0;
+            
+             font-family: "Montserrat Alternates", sans-serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+        
+        .menu-container {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            z-index: 100;
+        }
+        
+        .burger-btn {
+              display: none;
+        }
+        
+        .burger-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            padding: 5px;
+            box-sizing: border-box;
+            background-color: #424242;
+            border-radius: 2px;
+        }
+        
+        .burger-icon span {
+            display: inline;
+            width: 100%;
+            height: 3px;
+            background-color: #424242;
+        }
+        
+        .menu-content {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 200px;
+            background-color: #fff;
+            border: 1px solid #424242;
+            border-radius: 4px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+            font-family: "Montserrat Alternates", sans-serif;
+            font-style:normal;
+            font-weight: 800;
+
+         
+        }
+        
+        .menu-content a {
+            display: block;
+            padding: 12px 16px;
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px solid #eee;
+           
+        }
+        
+        .menu-content a:last-child {
+            border-bottom: none;
+        }
+        
+        .menu-content a:hover {
+            background-color: #444444;
+        }
+        
+        .burger-btn:checked ~ .menu-content {
+            display: inline;
+        }
+        
+        /* Белая версия */
+        .white-version .burger-icon {
+            background-color: #424242;
+            border: 0px solid #ffffff;
+        }
+        
+        .white-version .burger-icon span {
+            background-color: #ffffff;
+        }
+        
+        .white-version .menu-content {
+            background-color: #424242;
+            border: 0px solid #fff;
+        }
+        
+        .white-version .menu-content a {
+            color: #ffffff;
+            border-bottom: 4px solid #ffffff;
+        }
+        
+        .white-version .menu-content a:hover {
+            background-color: #606060;
+        }
+.soci-container {
+    /* background-image: url(social-button.png); */
+    position: fixed;
+    top: 15px;
+            right: 70px;
+            z-index: 2000;
+}
+.social-icon {
+     background-image: url(social-button.png);
+     background-position: 100%;
+     background-size: 45px;
+     display: flex;
+            width: 45px;
+            height: 49px;
+            cursor: pointer;
+
+            /* box-sizing: border-box; */
+
+}
+     .soci-content {
+            display: none;
+            position: absolute;
+            top: 64px;
+            right: 0;
+            width: 200px;
+            background-color: #424242;
+            border: 1px solid #424242;
+            border-radius: 0px;
+           
+            font-family: "Montserrat Alternates", sans-serif;
+            font-style:normal;
+            font-weight: 900;
+
+         
+        }
+        
+        .soci-content a {
+            display: inline;
+            padding: 12px 16px;
+            color: #ffff;
+            text-decoration: none;
+            border-bottom: 0px solid #eee;
+           
+        }
+        
+        .soci-content a:last-child {
+            border-bottom: none;
+        }
+        
+        /* .soci-content a:hover {
+           ; */
+        
+        
+        .burger-btn:checked ~ .soci-content {
+            display: inline;
+        }
+        
+        /* Белая версия */
+        .white-version .social-icon {
+            background-color: #424242;
+            border: 0px solid #ffffff;
+        }
+        
+       
+        
+        .white-version .soci-content {
+            background-color: #424242;
+            border: 1px solid #fff;
+        }
+        
+        .white-version .soci-content a {
+            color: #ffffff;
+            border-bottom: 2px solid #ffffff;
+        }
+        
+        .white-version .soci-content a:hover {
+            background-color: #606060;
+        }
+
+.contact {
+    margin-top:200px;
+    min-height: 80px;
+ 
+}
+
+
+
+
+
+
+
+   .nav-conteiner {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(215, 250, 248);
+}
+.nav-conteiner>nav>ul{
+    display: flex;
+    list-style: none;
+}
+.nav-conteiner>nav>ul>li>a {
+    display: block;
+    padding: 10px;
+    border-style: solid;
+    border-width: 0.5px;
+}   
+
+     @media ( max-width: 900px) {
+    .nav-conteiner {
+        flex-direction: column;
+    }
+} 
+@view-transition {
+  navigation: auto;
+  ::view-transition-old(root) {
+  animation: 0.3s ease-in-out both slideOut;
+}
+
+::view-transition-new(root) {
+  animation: 0.3s ease-in-out both zoomIn;
+}
+
+}
+
+
