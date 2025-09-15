@@ -1,0 +1,78 @@
+
+.audio-player {
+    margin-left: 85%;
+    display: inline;
+    position: fixed;  /* Фиксированное позиционирование */
+    right: 080px;     /* 20px от правого края */
+    top  : 17px;     /* 20px от нижнего края */
+    z-index: 1000;    /* Убедитесь, что кнопка поверх других элементов */
+
+}
+
+.audio-button {
+  /* Размеры и форма */
+  width: 40px;
+  height: 40px;
+  border-radius: 4px; /* Легкое скругление углов */
+  display: inline;
+  /* Цветовая схема */
+  background-color: #424242; /* Основной цвет кнопки */
+  border: 2px solid #424242; /* Граница для глубины */
+  
+  /* Текст и иконка */
+  color: white; /* Белый цвет для всего содержимого */
+  font-family: Arial, sans-serif;
+  
+  /* Позиционирование */
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Иконка ноты */
+.audio-button::before {
+  content: "♫";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-weight: bold;
+  display: inline;
+}
+
+/* Текст при наведении */
+.audio-button::after {
+  content: "Play Audio";
+  position: absolute;
+  top:  0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #424242;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 5px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Анимации */
+.audio-button:hover {
+  background-color: #606060;
+  border-color: #424242;
+}
+
+.audio-button:hover::before {
+  opacity: 0;
+}
+
+.audio-button:hover::after {
+  opacity: 0;
+}

@@ -1,0 +1,112 @@
+.contact {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    height: 60px;
+    background-color:#424242;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 0px;
+   display: flex;
+   bottom: 0;
+   z-index: 1000;
+}
+.contact p {
+    display: flex;
+    text-align: left;
+    margin-left: 80%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    color: azure;
+}
+.back-to-top {
+    margin-left:  0%;
+    text-decoration: none;
+  display: flex;
+  font-size: 74px;
+  font-weight: 800;
+  color: #ffffff;
+  background: none;
+  margin-left: 5%;
+  margin-top: 1%;
+  padding-bottom: 10%;
+  border-radius: 0px;
+
+  cursor: pointer;
+  z-index: 1000;
+}
+.back-to-top a {
+    padding-bottom: 10%;
+}
+ 
+.back-to-top:hover {
+  background: none;
+  text-decoration: none;
+}
+.social-icons-6 {
+    list-style: none;
+    margin-left: calc(100vw - (64px * 7 + 60px));
+    padding: 0;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;      
+}
+.social-icons-6 a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 00%;
+    margin-right:10%   ;
+    font-size: 64px;
+}
+.social-icons-6 a:after {
+    content: "";
+    display: block;
+    width:100%;
+    height:100%;
+    top: -110%;
+    left:80%;
+    right: 0;
+    margin-left: 80%    ;
+    position: absolute;
+    border-radius:  0%;
+}
+.social-icons-6 a i,
+.social-icons-6 a img {
+    position: relative;
+    z-index: 1;
+}
+.social-icons-6 a img {
+    width: 64px;
+    height: 64px;
+}
+.social-icons-6 a:hover {
+    color: #fff;
+}
+.social-icons-6 a:hover:after {
+    top: 5%;
+    margin-left: 80%;
+}
+@media screen and (max-width:768px){
+    .social-icons-6{
+         margin-right: 10%;
+         width: 60%;
+         
+    }
+}
+@media screen and (max-width:577px){
+    .social-icons-6{
+         margin-right: 10%;
+         width: 60%;
+         margin-bottom: 0;
+         bottom: 0;
+         
+    }
+    .back-to-top {
+        font-size: 60px;
+        bottom: 10px;
+    }
+}

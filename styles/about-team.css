@@ -1,0 +1,1536 @@
+  * { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat Alternates", sans-serif;
+   font-style:normal;
+   font-weight: 900;
+  background: #ffffff;
+}
+
+.visuallyhidden {
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  opacity: 0;
+  
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.container {
+  overflow: hidden;
+  padding: 100px;
+  padding-top: 200px;
+  padding-bottom: 350px;
+   
+}
+
+.card-carousel {
+  
+  margin-bottom: 200px;
+  margin-top: 60px;
+ --card-width:35%;
+  --card-max-width: 100%;
+  --card-height: 650px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 100px auto auto 100px;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+/* .ourteamgrf   {
+  margin-top: 0;
+  margin-left: 0;
+  height: 100px;
+  width: 100px;
+  z-index: 20000;
+}
+ .ourteamgrf img{
+  height: 100%;
+  width: 100%;
+ } */
+@media screen and (max-width: 768px) {
+  .image-container{
+    background-size: cover;
+    height:600px;
+    width: 400px !important;
+    margin-top:60px !important;
+  }
+  /* .ourteamgrf {
+    width: var(--card-width);
+    margin-left: 0;
+     right: 80%;
+     height: auto;
+  } */
+  /* .ourteamgrf img   {
+  margin-top: 0;
+  padding-right: 100px;
+  height: auto;
+  width: 240px;
+  z-index: 0;
+ 
+} */
+ .name_ourteam {
+  padding-bottom: 60%;
+
+ }
+  .card-carousel {
+    --card-width: 80%;
+    --card-height: 700px;
+    --carousel-min-width: 300px;
+    margin: 50px auto;
+    min-width: var(--carousel-min-width);
+    margin-left: auto;
+  }
+  
+  .card-carousel .card {
+    width: var(--card-width - 20%);
+    height: var(--card-height);
+  }
+  
+  /* .image-container {
+    position: relative;
+    width: 300px;
+   
+  } */
+  
+ 
+  
+  .TEAMainer {
+    margin-top: 0;
+    width: 80%;
+    height: 20% !important;
+    
+  }
+  .portfolio {
+    margin-top: 0;
+    
+  }
+  .rotating-text {
+  position: absolute;
+  white-space: nowrap;
+  transition: transform 0.1s ease;
+  will-change: transform;
+  height: auto;
+  margin-top: 0;
+}
+  .demo_spin{
+     margin: 40% 10% 5% ; 
+   width: 80%;
+
+    
+    font-weight: 900;
+    font-size: 24px;
+     
+    position: absolute;  
+      position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 38% !important;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    font-weight: 700;
+    font-size: 24px;
+   
+  }
+  .demo_spin {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+  }
+  
+  .card-controller{
+    position: absolute !important;
+    top: 0 !important;
+    height: 200px;
+  }
+  .name_ourteam{
+     
+    margin-right: 100px;
+    font-size: 45px;
+    padding-bottom: 80% !important;
+  }
+  .carousel-arrow {
+      /* width: 60px;
+      height: 60px; */
+      border: none;
+      border-radius: 50%;
+      margin-top: 0% !important;
+      
+       
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+   
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+       
+     background-color: #ffffff;
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  .ourteam_card{
+    width: 250px;
+    height: auto;
+    margin-right: 40%;
+  }
+  .card-controller{
+    margin-top: 600px;
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      margin-top: 0%  ;
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+       
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+       
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+     background-color: #ffffff !important;
+      transition: all 0.3s ease;
+     
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  
+.us_mini_button  {
+  position: absolute;
+  margin-left: 44% !important;
+  width: 30vw;
+  height: auto;
+  margin-top: 20px !important;
+
+}
+.us_mini_button img{
+   
+  margin-left: 10%;
+  width: 30vw;
+  height: auto;
+ 
+
+}
+.games_mini_button  {
+   position: absolute;
+ margin-right: 60%;
+width: 30vw;
+height: auto;
+  margin-top: 20px !important;
+  
+}
+.games_mini_button img {
+    
+ 
+width: 38vw;
+height: auto;
+  
+}
+}
+
+@media screen and (max-width: 640px) {
+   
+    .card-controller{
+    position: absolute !important;
+    top: 500px !important;
+    height: 200px;
+  }
+  .ourteam_card   {
+    width: 200px;
+    height: auto;
+    margin-top: 0 !important;
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      margin-top: 50%  ;
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+       
+      pointer-events: auto;  
+      z-index: 01;
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+       
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+     background-color: #ffffff !important;
+      transition: all 0.3s ease;
+     
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  .us_mini_button  {
+  position: absolute;
+
+  margin-left: 35% !important;
+  width: 300px;
+  height: 300px;
+  margin-top: 20px !important;
+
+}
+.us_mini_button img{
+   
+  margin-left: 10%;
+  width: 30vw;
+  height: auto;
+ 
+
+}
+.games_mini_button  {
+   position: absolute;
+  margin-right: 400px !important  ;
+ 
+width: 250px;
+height: 200px;
+  margin-top: 20px !important;
+}
+.games_mini_button img {
+    
+width: 35vw;
+left: 3%;
+height: auto;
+ 
+  
+}
+  .name_ourteam{
+    padding-bottom: 350px !important;
+    margin-right: 0% !important;
+    font-size: 33px !important;
+  }
+  .demo_spin span {
+    font-size: 16px !important;
+    height: 50px;
+    width: auto;
+  }
+   .card-controller{
+    padding-top: 0px ;
+    margin-top: 0px;
+  }
+   .image-container{
+    width: 60%;
+    background-size:cover ;
+    margin-top: 25%;
+  }
+  .rotating-text {
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 0.1s ease;
+    will-change: transform;
+  height: auto;
+  z-index: 0;
+  
+}
+  .demo_spin{
+     
+    color: #404040;
+    z-index: 0 !important;
+    font-weight: 900;
+    font-size: 14px;
+    z-index: 00;
+    position: absolute;  
+      position: absolute;
+    width: 110px;
+    height: 200px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
+    font-weight: 900;
+    font-size: 24px;
+   
+  }
+  .carousel-arrow {
+      /* width: 60px;
+      height: 60px; */
+      border: none;
+      border-radius: 50%;
+      
+      position: absolute;  
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ffffff !important;
+      transition: all 0.3s ease;
+      
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  .card-carousel {
+    
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+  .card-carousel .card {
+    
+      width: var(--card-width+20%);
+  }
+  .carousel-arrow-left{
+      margin-right: 85% !important;
+      background-color: #ffffff;
+}
+
+.carousel-arrow-right {
+    margin-left: 75% !important;  
+    background-color: #ffffff;
+}
+ 
+ 
+}
+@media screen and (min-width: 769px) 
+{ 
+  .ourteam_card{
+    width: 70%;
+    height: auto;
+    margin-right: 45% !important;
+    display: flex !important;
+    
+  }
+  .name_ourteam{
+    padding-bottom: 330px !important;
+    font-size: 38px !important;
+    margin-right: 20px !important;
+  }
+  .us_mini_button  {
+  position: absolute;
+  margin-left: 40% !important;
+  width: 33vw;
+  height: auto;
+  margin-top: 20px !important;
+
+}
+.us_mini_button img{
+   
+  margin-left: 10%;
+  width: 33vw;
+  height:auto;
+ 
+
+}
+.games_mini_button  {
+   position: absolute;
+  margin-right: 40% !important;
+  margin-left: 0;
+width: 38vw;
+height: auto;
+  margin-top: 20px !important;
+}
+.games_mini_button img {
+    
+width: 38vw;
+padding-right: 10%;
+height: auto;
+  
+}
+ 
+    .card-carousel {
+    --card-width: 40%;
+    --card-height: 700px;
+    --carousel-min-width: 300px;
+    margin: 50px auto;
+    min-width: var(--carousel-min-width);
+    margin-left: auto;
+  }
+  .image-container{
+    background-size: cover;
+    width: 80%;
+    height: 800px;
+    margin-top: 50px !important;
+  }
+  .card-carousel .card {
+    width: var(--card-width);
+    height: var(--card-height);
+  }
+  
+  .image-container {
+    position: relative;
+    width: 400px;
+   
+  }
+   
+  
+  .TEAMainer {
+    margin-top: 0;
+    width: 80%;
+    height: 20% !important;
+    
+  }
+  .portfolio {
+    margin-top: 0;
+    
+  }
+  .rotating-text {
+  position: absolute;
+  white-space: nowrap;
+  transition: transform 0.1s ease;
+  will-change: transform;
+  height: auto;
+}
+  .demo_spin{
+     margin: 40% 10% 5% ; 
+   width: 80%;
+
+    z-index: 0;
+    font-weight: 900;
+    font-size: 24px;
+    z-index: 00;
+    position: absolute;  
+      position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 34% !important;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    z-index: 90;
+    font-weight: 900;
+    font-size: 24px;
+   
+  }
+  .demo_spin {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+  }
+  
+  .card-controller{
+    padding-top: 0 !important;
+    margin-top: 00px !important;
+   
+  }
+  .carousel-arrow {
+      /* width: 60px;
+      height: 60px; */
+      border: none;
+      border-radius: 50%;
+      margin-bottom: 60% !important  ;
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+       
+      pointer-events: auto;  
+      z-index: 01;
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+       
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+     background-color: #ffffff !important;
+      transition: all 0.3s ease;
+     
+      pointer-events: auto;  
+      z-index: 101;
+  }
+}
+
+/* @media screen and (max-width: 640px) {
+   .card-controller{
+    padding-top: 0px ;
+    margin-top: 0px;
+  }
+   .image-container{
+    width: 60%;
+    background-size:cover ;
+  }
+  .rotating-text {
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 0.1s ease;
+    will-change: transform;
+  height: auto;
+  
+}
+  .demo_spin{
+     
+
+    z-index: 90;
+    font-weight: 900;
+    font-size: 24px;
+    z-index: 00;
+    position: absolute;  
+      position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 90;
+    font-weight: 900;
+    font-size: 24px;
+   
+  }
+  .carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      
+      position: absolute;  
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      pointer-events: auto;  
+      z-index: 101;
+  }
+  .card-carousel {
+    
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+  .card-carousel .card {
+    
+      width: var(--card-width+20%);
+  }
+  .carousel-arrow-left{
+      margin-right: 85%;
+      background: none;
+}
+
+.carousel-arrow-right {
+    margin-left: 85%;  
+    background: none;
+}
+} */
+.carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      top: 50% !important;
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+       
+      pointer-events: auto;  
+      z-index: 101;
+  }
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  border-color: #424242;
+  /* box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3); */
+ 
+  background-color: #ffffff;
+ font-size: large;
+  width: var(--card-width+10%);
+  max-width: var(--card-max-width);
+  text-align: center;
+  min-width: 350px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  transition: inherit;
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1)
+}
+
+
+.card:nth-of-type(1) .image-container {
+      
+    background-image: url("card.jpg");
+}
+ 
+.card:nth-of-type(2) .image-container {
+  background-image: url("card2.jpg") ;
+}
+
+.card:nth-of-type(3) .image-container {
+background-image: url("card3.jpg") ;
+}
+.card:nth-of-type(4) .image-container {
+background-image: url("card4.jpg") ;
+}
+.card:nth-of-type(5) .image-container {
+background-image: url("card5.jpg") ;
+}
+
+
+
+.image-container {
+   background-size: contain;      
+    background-position: center;
+    background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: contain;
+  margin-bottom: 0%;
+    margin-top: 0%;
+ 
+
+  
+  z-index: 100;
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+   
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+h2 {
+  padding: 0em;
+  margin-top: 1em;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  color: white;
+  border-radius: .2em;
+  display: inline-block;
+  transform: translateX(calc((100vw - 100%) / 2))
+}
+
+h2 a {
+  color: #f5b916
+}
+
+/* .TEAMainer   {
+  overflow: hidden;
+  scrollbar-width: none;
+  scrollbar-color: blue rgb(37, 34, 34);
+  
+  background: white;
+
+  width: 300px;
+  height: 400px;
+  margin:   0px 12px 12px 12px;
+  border-radius: 6px;
+  overflow: auto;
+  color: rgba(74, 7, 7, 0);
+  -webkit-text-fill-color: black;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  transition: color .3s ease;
+
+} */
+.portfolio{
+  margin-top:00px;
+  background-color: #424242;
+  text-align: center;
+  display: block;
+  width: 70%;
+  height: 7%;
+  z-index: 100;
+}
+.portfolio p{
+   font-family: "Montserrat Alternates", sans-serif;
+   font-style:normal;
+   font-weight: 750;
+
+  text-decoration-color: #ffffff;
+  z-index: 100;
+
+
+}
+
+.TEAMainer{
+  height: 35% !important;
+  width: 70% !important;
+  z-index: 100;
+}
+.rotating-text {
+  position: absolute;
+  white-space: nowrap;
+  transition: transform 0.1s ease;
+  will-change: transform;
+  height: auto;
+  z-index: 1;
+}
+  .demo_spin{
+    z-index: 1;
+    /* margin: 40% 10% 5% ; */
+     /* width: 80%;
+
+    z-index: 90;
+    font-weight: 900;
+    font-size: 24px;
+    z-index: 00;
+    position: absolute; */
+      position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 90;
+    font-weight: 900;
+    font-size: 24px;
+   
+  }
+
+.card {
+    position: relative;
+    overflow: visible;
+}
+.card-carousel {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-carousel {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контроллер теперь позиционируется абсолютно поверх карусели */
+.card-controller {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    transform: translateY(-50%);
+    z-index: 100; /* Очень высокий z-index чтобы быть поверх всего */
+    pointer-events: none; /* Позволяет кликать сквозь пустые области */
+}
+
+
+.carousel-arrow:hover {
+   background-color: #ffffff;
+    transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+  background-color: #ffffff;
+    transform: scale(0.95);
+}
+
+/* Делаем стрелки более заметными */
+.carousel-arrow-left {
+  background-color: #ffffff;
+    margin-right: auto;
+      background: none;
+}
+
+.carousel-arrow-right {
+  background-color: #ffffff;
+    margin-left: auto;  
+    background: none;
+}
+
+.card {
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 100; /* Карточки под стрелками */
+}
+
+.card.highlight {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    z-index: 1000;
+    background: #f8f9fa;
+     
+    transform: scale(1.05) translateZ(0px) !important;
+}
+.card-carousel,
+.card-controller,
+.carousel-arrow,
+.card {
+    user-select: none; /* Запрещает выделение текста */
+    -webkit-user-select: none; /* Для Safari */
+    -moz-user-select: none; /* Для Firefox */
+    -ms-user-select: none; /* Для IE/Edge */
+}
+
+.card {
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе на мобильных */
+}
+
+.carousel-arrow {
+  background-color: #ffffff;
+    outline: none; /* Убирает outline при фокусе */
+}
+
+/* Дополнительно для карточек */
+.card * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.card {
+    position: relative;
+    width: 35%;
+    height: 45%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden; /* Скрываем все что выходит за границы */
+}
+
+.card-content {
+    height: calc(100% - 20px); /* Оставляем место для бегунка */
+    overflow: hidden; /* Скрываем скроллбар по умолчанию */
+    position: relative;
+}
+
+/* Только нужные стили */
+.TEAMainer {
+  font-weight: 700 !important; 
+    width: 60%;
+    height: 200px;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 0px 0;
+    overflow: hidden;
+}
+
+.text-scroll-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+   background-color: rgb(248, 249, 250)
+}
+
+.scrollable-text {
+    width: calc(100% - 20px);
+    height: 100%;
+    z-index: 1000;
+    color: #333333 !important;
+    padding: 10px;
+    padding-right: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+  
+  .scrollable-text::-webkit-scrollbar {
+    display: none;
+    z-index: 1000;
+  }
+
+.text-scroll-handle {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 6px;
+    z-index: 1000;
+    height: 40px;
+    background: #333333;
+    border-radius: 3px;
+    cursor: grab;
+    display: none;
+    z-index: 10;
+  }
+  
+  .text-scroll-handle:hover {
+    background: #424242;
+  }
+  
+  .text-scroll-handle:active {
+    cursor: grabbing;
+    background: #424242;
+}
+
+.name_ourteam {
+  font-family: "Montserrat Alternates", sans-serif;
+   font-style:normal;
+   font-weight: 900;
+    color: #2e77ae;
+    font-size: 200%;
+    position: absolute;
+    padding-left: 45%;
+ 
+    padding-bottom: 95%;
+    z-index: 11;
+}
+.games_mini_button {
+  background-image: url();
+}
+.us_mini_button {
+  position: absolute;
+  margin-left: 70%;
+
+  margin-top: 820px;
+
+}
+.games_mini_button {
+   position: absolute;
+  margin-right: 70%;
+
+  margin-top: 820px;
+}
+.carousel-arrow {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      /* margin-top: 400px; */
+     
+      color: #2e77ae;
+      font-size: 44px;
+      font-weight: bold;
+      cursor: pointer;
+      background: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      pointer-events: auto; /* Включаем кликабельность для стрелок */
+      z-index: 101;
+  }
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Montserrat Alternates", sans-serif;
+   font-style:normal;
+   font-weight: 900;
+  background: #ffffff;
+}
+
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
+  
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.container {
+  overflow: hidden;
+  padding: 100px;
+  padding-top: 200px;
+  padding-bottom: 350px;
+  background: rgba(0,0,0,.1)
+}
+
+.card-carousel {
+  
+  margin-bottom: 200px;
+  margin-top: 60px;
+ --card-width:35%;
+  --card-max-width: 100%;
+  --card-height: 650px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 100px auto auto 100px;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+  .card-carousel .card {
+    
+      width: var(--card-width+20%);
+  }
+}
+@media screen and (min-width: 641px) {
+ 
+  .card-carousel .card {
+    --card-width: 35%;
+      width: var(--card-width);
+  }
+}
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  border-color: #424242;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  color: rgba(0,0,0,.5);
+  background-color: #ffffff;
+ font-size: large;
+  width: var(--card-width+20%);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 0em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  transition: inherit;
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1)
+}
+
+
+.card:nth-of-type(1) .image-container {
+  /* background: url('video.webm') no-repeat center/cover; */
+    /* background-image: url("card.jpg");
+}
+ 
+.card:nth-of-type(2) .image-container {
+  background-image: url("card2.jpg") ;
+}
+
+.card:nth-of-type(3) .image-container {
+background-image: url("card3.jpg") ;
+}
+.card:nth-of-type(4) .image-container {
+background-image: url("card4.jpg") ;
+}
+.card:nth-of-type(5) .image-container {
+background-image: url("card5.jpg") ;
+}
+
+
+
+.image-container {
+  height: 350%;
+  width: 70%;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 10%;
+ 
+
+  
+  z-index: 0;
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 150%;
+  height: 150%;
+  /* border: solid 3px rgba(0,0,0,.1); *
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+h2 {
+  padding: 0em;
+  margin-top: 1em;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  color: white;
+  border-radius: .2em;
+  display: inline-block;
+  transform: translateX(calc((100vw - 100%) / 2))
+}
+
+h2 a {
+  color: #f5b916
+}
+
+/* .TEAMainer   {
+  overflow: hidden;
+  scrollbar-width: none;
+  scrollbar-color: blue rgb(37, 34, 34);
+  
+  background: white;
+
+  width: 300px;
+  height: 400px;
+  margin:   0px 12px 12px 12px;
+  border-radius: 6px;
+  overflow: auto;
+  color: rgba(74, 7, 7, 0);
+  -webkit-text-fill-color: black;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  transition: color .3s ease;
+
+/* } */ /*
+.portfolio{
+  margin-top:00px;
+  background-color: #424242;
+  text-align: center;
+  display: block;
+  width: 60%;
+  height: 50px;
+}
+.portfolio p{
+   font-family: "Montserrat Alternates", sans-serif;
+   font-style:normal;
+   font-weight: 750;
+
+  text-decoration-color: #ffffff;
+
+
+}
+
+
+.demo_spin {
+    /* position: absolute; 
+    width: 80%;
+  
+    margin: 40% 10% 5% ;
+    z-index: 90;
+    font-weight: 900;
+    font-size: 24px;
+    z-index: 00;
+}
+
+.rotating-text {
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 0.1s ease;
+    will-change: transform;
+    height: 30%;
+}
+
+.card {
+    position: relative;
+    overflow: visible;
+}
+.card-carousel {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-carousel {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin: 0 auto;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контроллер теперь позиционируется абсолютно поверх карусели 
+.card-controller {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    transform: translateY(-50%);
+    z-index: 100; /* Очень высокий z-index чтобы быть поверх всего 
+    pointer-events: none; /* Позволяет кликать сквозь пустые области 
+}
+
+.carousel-arrow {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    margin-top: 400px;
+   
+    color: #2e77ae;
+    font-size: 44px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    pointer-events: auto; /* Включаем кликабельность для стрелок 
+    z-index: 101;
+}
+
+.carousel-arrow:hover {
+   
+    transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+    transform: scale(0.95);
+}
+
+/* Делаем стрелки более заметными  
+.carousel-arrow-left {
+    margin-right: auto;
+      background: none;
+}
+
+.carousel-arrow-right {
+    margin-left: auto;  
+    background: none;
+}
+
+.card {
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 100; /* Карточки под стрелками  
+}
+
+.card.highlight {
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    z-index: 1000;
+    background: #f8f9fa;
+     
+    transform: scale(1.05) translateZ(0px) !important;
+}
+.card-carousel,
+.card-controller,
+.carousel-arrow,
+.card {
+    user-select: none; /* Запрещает выделение текста 
+    -webkit-user-select: none; /* Для Safari 
+    -moz-user-select: none; /* Для Firefox 
+    -ms-user-select: none; /* Для IE/Edge *
+}
+
+.card {
+    -webkit-tap-highlight-color: transparent; /* Убирает подсветку при тапе на мобильных *
+}
+
+.carousel-arrow {
+    outline: none; /* Убирает outline при фокусе *
+}
+
+/* Дополнительно для карточек *
+.card * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.card {
+    position: relative;
+    width: 35%;
+    height: 45%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden; /* Скрываем все что выходит за границы *
+}
+
+.card-content {
+    height: calc(100% - 20px); /* Оставляем место для бегунка *
+    overflow: hidden; /* Скрываем скроллбар по умолчанию *
+    position: relative;
+}
+
+/* Только нужные стили *
+.TEAMainer {
+    width: 60%;
+    height: 400px;
+    position: relative;
+    border: 1px solid #ddd;
+    margin: 0px 0;
+    overflow: hidden;
+}
+
+.text-scroll-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.scrollable-text {
+    width: calc(100% - 20px);
+    height: 100%;
+    color: #424242;
+    padding: 10px;
+    padding-right: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+  }
+  
+  .scrollable-text::-webkit-scrollbar {
+    display: none;
+  }
+
+.text-scroll-handle {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 6px;
+    height: 40px;
+    background: #42424242;
+    border-radius: 3px;
+    cursor: grab;
+    display: none;
+    z-index: 10;
+  }
+  
+  .text-scroll-handle:hover {
+    background: #424242;
+  }
+  
+  .text-scroll-handle:active {
+    cursor: grabbing;
+    background: #424242;
+}
+.ourteam_card {
+    position: absolute;
+    display: flex;
+    padding-bottom: 95%;
+    padding-right: 45%;
+}
+.name_ourteam {
+  font-family: "Montserrat Alternates", sans-serif;
+   font-style:normal;
+   font-weight: 900;
+    color: #2e77ae;
+    font-size: 200%;
+    position: absolute;
+    padding-left: 45%;
+ 
+    padding-bottom: 95%;
+    z-index: 11;
+}
+.games_mini_button {
+  background-image: url();
+}
+.us_mini_button {
+  position: absolute;
+  margin-left: 70%;
+
+  margin-top: 820px;
+
+}
+.games_mini_button {
+   position: absolute;
+  margin-right: 70%;
+
+  margin-top: 820px;
+} */ 
+
+
+/* Исправляем позиционирование name_ourteam */
+ 
