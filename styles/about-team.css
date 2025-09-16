@@ -461,8 +461,8 @@ height: auto;
 }
 .us_mini_button img{
    
-  margin-left: 10%;
-  width: 33vw;
+  margin-right: 10%;
+  width: 30vw;
   height:auto;
  
 
@@ -470,7 +470,7 @@ height: auto;
 .games_mini_button  {
    position: absolute;
   margin-right: 40% !important;
-  margin-left: 0;
+  margin-left: 10%;
 width: 38vw;
 height: auto;
   margin-top: 20px !important;
