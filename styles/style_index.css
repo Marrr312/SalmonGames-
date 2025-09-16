@@ -805,12 +805,13 @@
                    }
 }
 @media screen and {min-width: 1387px){
-     .slider-container .slider-1 img {
+     .slider img {
         width: 100%;
-        height: auto;
+        height: auto !important;
         max-width: 1700px !important;
                    }
 }
+
 
 
 
