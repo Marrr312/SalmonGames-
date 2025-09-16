@@ -321,7 +321,7 @@
     .about-us-button,
     .about-team-button,
     .games-button {
-        height: 800px !important;
+        min-height: 800px !important;
     }
     
     /* ГРАФФИТИ */
@@ -812,6 +812,7 @@
        
                    }
 }
+
 
 
 
