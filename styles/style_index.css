@@ -1005,7 +1005,7 @@
     
     /* ГРАФФИТИ */
     .graffiti{
-        height: 900px;
+        height: 600px;
         width: auto;
     }
    .graffiti img {
@@ -1090,6 +1090,7 @@
     /* КНОПКИ "ДАЛЕЕ" */
     .furthe-about button {
         font-size: 140px;
+        height: auto;
     }
 }
 
@@ -1469,4 +1470,5 @@
      
 }
 }
+
 
