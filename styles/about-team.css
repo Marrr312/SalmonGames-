@@ -29,10 +29,12 @@ h1 {
   overflow: hidden;
   padding: 100px;
   padding-top: 200px;
-  padding-bottom: 350px;
+  padding-bottom: 0px;
    
 }
-
+.us-mini-button {
+ padding-bottom: 300px;
+}
 .card-carousel {
   
   margin-bottom: 200px;
