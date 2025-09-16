@@ -200,7 +200,7 @@
     animation: fadeOut 0.5s forwards;
 }
 
-/* МОБИЛЬНАЯ АДАПТАЦИЯ - СОХРАНЯЕМ ОРИГИНАЛЬНУЮ СТРУКТУРУ  /
+/* МОБИЛЬНАЯ АДАПТАЦИЯ  /
 @media (max-width: 1200px) {
     #gamesGR{
         margin-left: 30%;
@@ -683,21 +683,8 @@
     }
 } 
 
-/* Гарантия что оригинальные стили не сбиваются на десктопе  
- @media (min-width: 1201px) {
-    .banners,
-    .about-us-button,
-    .about-team-button,
-    .games-button,
-    .graffiti,
-    .slider-container,
-    .slider,
-    .prev-button,
-    .next-button,
-    .furthe-about {
-        all: revert !important;
-    }
-}  */
+  
+ 
 .banners{
     margin-right: 5%;
     margin-left: 5%;
@@ -769,14 +756,14 @@
     position: absolute;
     display: block; 
      
-    z-index: 15; /* Граффити поверх слайдеров */
+    z-index: 15; 
 }
 .graffiti img {
     display: flex;
-    transition: transform 1s; /* Анимация только для изображения */
+    transition: transform 1s; 
 }
 .graffiti:hover img {
-    transform: scale(1.075); /* Увеличение только при наведении на граффити */
+    transform: scale(1.075);  
 }
 /* СЛАЙДЕРЫ НА БАННЕРАХ */
 .slider-container {
@@ -831,11 +818,13 @@
 }
 
 #prev1 {
+    margin-top: 50px;
     left: 10px;
 }
 
 #next1 {
     right: 10px;
+    margin-bottom: 40px;
 }
 
 /* КНОПКИ "ДАЛЕЕ" НА БАННЕРАХ */
@@ -1480,3 +1469,4 @@
      
 }
 }
+
