@@ -453,15 +453,15 @@ height: auto;
   }
   .us_mini_button  {
   position: absolute;
-  margin-left: 45% !important;
+  margin-right: 5% !important;
   width: 33vw;
   height: auto;
-  margin-top: 70vh !important;
+  margin-top: 50vh !important;
 
 }
 .us_mini_button img{
    
-  margin-right: 10%;
+   
   width: 30vw;
   height:auto;
  
