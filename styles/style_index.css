@@ -804,5 +804,11 @@
         height: auto;
                    }
 }
+@media screen and {min-width: 1387px){
+    .slider-1 {
+        width: 98%;
+        height: auto;
+                   }
+}
 
 
