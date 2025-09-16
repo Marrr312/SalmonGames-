@@ -805,11 +805,12 @@
                    }
 }
 @media screen and {min-width: 1387px){
-    .slider-1 {
+    .slider .slider-1 {
         width: 90vw;
         height: auto;
                    }
 }
+
 
 
 
