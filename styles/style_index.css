@@ -321,7 +321,7 @@
     .about-us-button,
     .about-team-button,
     .games-button {
-        height: 57vw !important;
+        min-height: 800px !important;
     }
     
     /* ГРАФФИТИ */
@@ -370,7 +370,7 @@
     }
     
     .slider {
-        height: 800px !important;
+        height: 57vw !important;
     }
     
     #Gameslider {
@@ -812,6 +812,7 @@
        
                    }
 }
+
 
 
 
