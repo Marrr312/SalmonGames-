@@ -799,9 +799,10 @@
 }
 }
 @media screen and {min-width: 1282px){
-    .slider-1 {
-        width: 96%;
-        height: auto;
+      .slider img   {
+        width: 100%;
+        height: auto !important;
+       
                    }
 }
 @media screen and {min-width: 1387px){
@@ -811,6 +812,7 @@
        
                    }
 }
+
 
 
 
