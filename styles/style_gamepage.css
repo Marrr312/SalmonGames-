@@ -139,8 +139,8 @@
 @media  screen and (min-width:769px) {
     #pic2 {
     margin-left: 0%;
-    margin-right: 0%;
-    width: 80%;
+    margin-right: 20%;
+     
 }
 .gamepicture12{
     margin-right: 6%;
@@ -163,5 +163,6 @@
 }
 
 }
+
 
 
