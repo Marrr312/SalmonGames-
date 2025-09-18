@@ -97,7 +97,7 @@
   
 }
     .gameabout{
-        font-size: 24px !important;
+        font-size: 24px;
     }
     .gamepicture12 {
   display: flex;
@@ -137,10 +137,12 @@
     
 }
 @media  screen and (min-width:769px) {
-  
+ .gameabout{
+        font-size: 54px !important;
+    font-weight:800 !important;
+    }
 .gamepicture12{
     margin-right: 6% !important;
-    font-weight:800 !important;
     
 }
 #pic3, #pic4{
@@ -160,6 +162,7 @@
 }
 
 }
+
 
 
 
