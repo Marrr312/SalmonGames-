@@ -20,40 +20,9 @@
     font-weight: 900;
     font-style: normal;
 }
-#more {display: none;}
-.myBtn{
-    margin-left: 80%;
-    cursor: pointer;
-    margin-left: 75%;
-    display: block;
-    height: 40px;
-    width: 130px;
-    text-decoration: none;
-    border-bottom: 9px solid #eee;
-    border-radius: 4px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-    box-sizing: border-box;
-    border-color: #ff8e2b;
-    background-color: #ff8e2b;
-    color: #ffffff;
+ 
 
-     
-             font-family: "Montserrat Alternates", sans-serif;
-            font-weight: 900;
-            font-style: normal;
-}
-
-.gameabout, #more {
-    max-width: 70%;
-    text-align: center;
-    justify-content: center;
-    margin-left: 10%;
-    font-size: 32px;
-    margin-bottom: 130px;
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
+ 
 .gamepicture12 {
     display: flex;
     width: 80%;
@@ -178,12 +147,12 @@
     
 }
 #pic3, #pic4{
-     width: 45vw;;
-  height: auto;
+     width: 45vw !important;
+     height: auto;
 }
 #pic1, #pic2{
   
-  width: 40vw;;
+  width: 40vw !important;
   height:auto;
  
 }
@@ -194,3 +163,4 @@
 }
 
 }
+
