@@ -143,8 +143,8 @@ body {
 
 /* ДЕСКТОПНАЯ ВЕРСИЯ */
 @media screen and (min-width: 769px) {
-    .gameabout {
-        font-size: 840px !important;
+    p {
+        font-size: 44px !important;
         font-weight: 700 !important;
     }
     
@@ -168,6 +168,7 @@ body {
         margin-top: 50px;
     }
 }
+
 
 
 
