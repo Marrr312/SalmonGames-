@@ -1,13 +1,4 @@
  
-.banners{
-    margin-right: 5%;
-    margin-left: 5%;
-    background-color: #ffffff;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 80px; /* Отступ между баннерами */
-}
 :root {
     --colour-lightblue: #ffffff;
     --colour-darkblue: #0d2137;
@@ -15,6 +6,16 @@
 }
 
 /* БАННЕРЫ */
+.banners{
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
 .about-us-button,
 .about-team-button,
 .games-button {
@@ -23,9 +24,11 @@
     width: 100%;
     margin: 0 !important;
 }
+
 .about-us-button{
     padding-top: 100px;
 }
+
 .about-us-button > img,
 .about-team-button > img,
 .games-button > img {
@@ -35,7 +38,7 @@
     display: block;
 }
 
-/* ГРАФФИТИ НА БАННЕРАХ */
+/* ГРАФФИТИ */
 .graffiti {
     position: absolute;
     z-index: 15;
@@ -43,6 +46,7 @@
     height: auto;
     top: 20px;
     right: 20px;
+    display: block;
 }
 
 #aboutusGR {
@@ -64,22 +68,16 @@
     width: 40%;
 }
 
-
-  
-.graffiti {
-    position: absolute;
-    display: block; 
-     
-    z-index: 15; /* Граффити поверх слайдеров */
-}
 .graffiti img {
     display: flex;
-    transition: transform 1s; /* Анимация только для изображения */
+    transition: transform 1s;
 }
+
 .graffiti:hover img {
-    transform: scale(1.075); /* Увеличение только при наведении на граффити */
+    transform: scale(1.075);
 }
-/* СЛАЙДЕРЫ НА БАННЕРАХ */
+
+/* СЛАЙДЕРЫ */
 .slider-container {
     position: absolute;
     width: 80%;
@@ -98,7 +96,8 @@
     width: 100%;
     height: 100%;
 }
- #Gameslider {
+
+#Gameslider {
     top: 150px;
     left: 50%;
     transform: translateX(-50%);
@@ -112,9 +111,6 @@
     height: 100%;
     object-fit: contain;
 }
-
- 
- 
 
 /* КНОПКИ СЛАЙДЕРОВ */
 .prev-button,
@@ -139,7 +135,7 @@
     right: 10px;
 }
 
-/* КНОПКИ "ДАЛЕЕ" НА БАННЕРАХ */
+/* КНОПКИ "ДАЛЕЕ" */
 .furthe-about {
     position: absolute;
     bottom: 30px;
@@ -216,17 +212,17 @@
         height: 600px !important;
     }
     
-    /* ГРАФФИТИ */
-   .graffiti img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: 1s;
-}
+    .graffiti img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        transition: 1s;
+    }
 
-.graffiti img:hover {
-    transform: scale(1.075);
-}
+    .graffiti img:hover {
+        transform: scale(1.075);
+    }
+    
     #aboutusGR {
         margin-right:20px !important ;
         top: 70px;
@@ -249,14 +245,11 @@
         height: 200px;
     }
 
-    /* СЛАЙДЕРЫ */
     .slider-container {
         width: 100% !important;
         height: 100% !important;
         top: 0px !important;
     }
-    
-   
     
     #Gameslider {
         top: 0px !important;
@@ -270,9 +263,6 @@
         margin-left: 4.5%;
     }
     
-   
-    
-    /* КНОПКИ СЛАЙДЕРОВ */
     .prev-button,
     .next-button {
         height: 60px !important;
@@ -280,12 +270,15 @@
         font-size: 80px !important;
         cursor: pointer;
     }
+    
     #Buttons-games-further {
         left: 90%;
     }
+    
     #Buttons-games-back {
        left:0% ;
     }
+    
     #prev1 {
         left: 44% !important;
         top: 60% !important;
@@ -296,20 +289,19 @@
         top: 60% !important;
     }
     
-    /* КНОПКИ "ДАЛЕЕ" */
     .furthe-about button {
         font-size: 90px;
     }
+    
     #aboutGAMEFRT {
         margin-top: 60%;
-
     }
+    
     #about-tmFRTH {
         margin-top: 84% !important;
     }
 }
 
- 
 /* АДАПТАЦИЯ ДЛЯ БОЛЬШИХ ЭКРАНОВ */
 @media (min-width: 1201px) {
     .banners {
@@ -323,21 +315,22 @@
         min-height: 800px !important;
     }
     
-    /* ГРАФФИТИ */
     .graffiti{
         height: 500px;
         width: auto;
     }
-   .graffiti img {
-    width: 900px;
-    height: auto;
-    object-fit: contain;
-    transition: 1s;
-}
+   
+    .graffiti img {
+        width: 900px;
+        height: auto;
+        object-fit: contain;
+        transition: 1s;
+    }
 
-.graffiti img:hover {
-    transform: scale(1.075);
-}
+    .graffiti img:hover {
+        transform: scale(1.075);
+    }
+    
     #aboutusGR {
         margin-right:20px !important ;
         top: 70px;
@@ -361,7 +354,6 @@
         height: auto;
     }
 
-    /* СЛАЙДЕРЫ */
     .slider-container {
         width: 100% !important;
         height: 100% !important;
@@ -383,9 +375,6 @@
         margin-left: 4.5%;
     }
     
-   
-    
-    /* КНОПКИ СЛАЙДЕРОВ */
     .prev-button,
     .next-button {
         height: 80px !important;
@@ -393,12 +382,15 @@
         font-size: 100px !important;
         cursor: pointer;
     }
+    
     #Buttons-games-further {
         left: 90%;
     }
+    
     #Buttons-games-back {
        left:0% ;
     }
+    
     #prev1 {
         left: 44% !important;
         top: 60% !important;
@@ -409,10 +401,10 @@
         top: 60% !important;
     }
     
-    /* КНОПКИ "ДАЛЕЕ" */
     .furthe-about button {
         font-size: 140px;
     }
+    
     #about-tmFRTH{
         height: auto !important;
         width: auto !important;
@@ -422,7 +414,7 @@
 }
 
 @media (max-width: 885px) {
-        .banners {
+    .banners {
         margin: 0 4%;
         gap: 62px;
     }
@@ -432,20 +424,22 @@
     .games-button {
         height: 450px !important;
     }
+    
     .games-button{
         padding-bottom: 100px;
     }
-    /* ГРАФФИТИ */
-   .graffiti img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: 1s;
-}
+    
+    .graffiti img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        transition: 1s;
+    }
 
-.graffiti img:hover {
-    transform: scale(1.075);
-}
+    .graffiti img:hover {
+        transform: scale(1.075);
+    }
+    
     #aboutusGR {
         margin-right:20px !important ;
         top: 70px;
@@ -461,11 +455,10 @@
         height: 440px !important;
         width: 300px;
     }
-      #gamesGR img {
+    
+    #gamesGR img {
         top: 0px;
         right: 0%;
-         
-         
         height: 200px !important;
         width: 400px;
     }
@@ -476,16 +469,17 @@
         width: 450px !important;
     }
 
-    /* СЛАЙДЕРЫ */
     .slider-container {
         width: 100% !important;
         height: 100% !important;
         top: 0px !important;
     }
+    
     .slider img{
         width: 100%;
         height: auto;
     }
+    
     .slider {
         height: 500px !important;
     }
@@ -501,9 +495,6 @@
         margin-left: 4.5%;
     }
     
-   
-    
-    /* КНОПКИ СЛАЙДЕРОВ */
     .prev-button,
     .next-button {
         height: 60px !important;
@@ -511,12 +502,15 @@
         font-size: 80px !important;
         cursor: pointer;
     }
+    
     #Buttons-games-further {
         left: 90%;
     }
+    
     #Buttons-games-back {
        left:0% ;
     }
+    
     #prev1 {
         left: 44% !important;
         top: 60% !important;
@@ -528,19 +522,23 @@
         top: 60% !important;
     }
     
-    /* КНОПКИ "ДАЛЕЕ" */
     .furthe-about button {
-        font-size: 60px !important;}
-   #about-usFRTH {
-    bottom: 10%;
-    right: 50px;
+        font-size: 60px !important;
+    }
+    
+    #about-usFRTH {
+        bottom: 10%;
+        right: 50px;
+    }
+    
+    #aboutGAMEFRT {
+        bottom: 10%;
+        right: 50px;
+    }
 }
-  #aboutGAMEFRT {
-    bottom: 10%;
-    right: 50px;
-} }
+
 @media screen and (max-width:677px){
-           .banners {
+    .banners {
         margin: 0 4%;
         gap: 60px;
     }
@@ -550,29 +548,33 @@
     .games-button {
         height: 350px !important;
     }
+    
     .games-button{
         padding-bottom: 100px;
     }
-    /* ГРАФФИТИ */
-   .graffiti img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: 1s;
-}
+    
+    .graffiti img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        transition: 1s;
+    }
 
-.graffiti img:hover {
-    transform: scale(1.075);
-}
+    .graffiti img:hover {
+        transform: scale(1.075);
+    }
+    
     #aboutusGR {
         margin-right:20px !important ;
         top: 120px;
         right: 0%;
         width: 400px !important;
     }
+    
     .next-button, .prev-button{
         font-size: 40px;
     }
+    
     #gamesGR  {
         top: 0px;
         right: 20%;
@@ -581,11 +583,10 @@
         height: 240px !important;
         width: 200px;
     }
+    
     #gamesGR img {
         top: 0px;
         right: 25%;
-         
-         
         height: 200px !important;
         width: 300px;
     }
@@ -596,16 +597,17 @@
         width: 400px !important;
     }
 
-    /* СЛАЙДЕРЫ */
     .slider-container {
         width: 100% !important;
         height: 100% !important;
         top: 0px !important;
     }
+    
     .slider img{
         width: 100%;
         height: auto;
     }
+    
     .slider {
         height: 400px !important;
     }
@@ -621,9 +623,6 @@
         margin-left: 4.5%;
     }
     
-   
-    
-    /* КНОПКИ СЛАЙДЕРОВ */
     .prev-button,
     .next-button {
         height: 60px !important;
@@ -631,16 +630,18 @@
         font-size: 50px !important;
         cursor: pointer;
     }
+    
     #Buttons-games-further {
         left: 85%;
     }
+    
     #Buttons-games-back {
        left:0% ;
     }
+    
     #prev1 {
         left: 44% !important;
         top: 60% !important;
-        
     }
     
     #next1 {
@@ -649,27 +650,30 @@
         margin-bottom: 50px;
     }
     
-    /* КНОПКИ "ДАЛЕЕ" */
     .furthe-about button {
-        font-size: 50px !important;}
-   #about-usFRTH {
-    bottom: 10%;
-    right: 50px;
+        font-size: 50px !important;
+    }
+    
+    #about-usFRTH {
+        bottom: 10%;
+        right: 50px;
+    }
+    
+    #aboutGAMEFRT {
+        bottom: 10%;
+        right: 50px;
+    }
+    
+    #about-tmFRTH {
+        right: 15%;
+        bottom: 35%;
+        height: 20px !important;
+        width: 20px !important;
+    }
 }
-  #aboutGAMEFRT {
-    bottom: 10%;
-    right: 50px;
-}
-#about-tmFRTH {
-    right: 15%;
-    bottom: 35%;
-    height: 20px !important;
-    width: 20px !important;
-     
-}
-}
+
 @media screen and (max-width:535px){
-            .banners {
+    .banners {
         margin: 0 4%;
         gap: 60px;
     }
@@ -679,29 +683,33 @@
     .games-button {
         height: 250px !important;
     }
+    
     .games-button{
         padding-bottom: 100px;
     }
-    /* ГРАФФИТИ */
-   .graffiti img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: 1s;
-}
+    
+    .graffiti img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        transition: 1s;
+    }
 
-.graffiti img:hover {
-    transform: scale(1.075);
-}
+    .graffiti img:hover {
+        transform: scale(1.075);
+    }
+    
     #aboutusGR {
         margin-right:20px !important ;
         top: 120px;
         right: 0%;
         width: 300px !important;
     }
+    
     .next-button, .prev-button{
         font-size: 40px;
     }
+    
     #gamesGR  {
         top: 0px;
         right: 10%;
@@ -710,11 +718,10 @@
         height: 240px !important;
         width: 200px;
     }
+    
     #gamesGR img {
         top: 0px;
         right: 10%;
-         
-         
         height: 140px !important;
         width: 240px;
     }
@@ -725,16 +732,17 @@
         width: 300px !important;
     }
 
-    /* СЛАЙДЕРЫ */
     .slider-container {
         width: 100% !important;
         height: 100% !important;
         top: 0px !important;
     }
+    
     .slider img{
         width: 100%;
         height: auto;
     }
+    
     .slider {
         height: 300px !important;
     }
@@ -750,9 +758,6 @@
         margin-left: 4.5%;
     }
     
-   
-    
-    /* КНОПКИ СЛАЙДЕРОВ */
     .prev-button,
     .next-button {
         height: 60px !important;
@@ -760,16 +765,18 @@
         font-size: 30px !important;
         cursor: pointer;
     }
+    
     #Buttons-games-further {
         left: 85%;
     }
+    
     #Buttons-games-back {
        left:0% ;
     }
+    
     #prev1 {
         left: 44% !important;
         top: 60% !important;
-        
     }
     
     #next1 {
@@ -778,52 +785,38 @@
         margin-bottom: 50px;
     }
     
-    /* КНОПКИ "ДАЛЕЕ" */
     .furthe-about button {
-        font-size: 40px !important;} */
-   #about-usFRTH {
-    bottom: 15%;
-    right: 40px;
+        font-size: 40px !important;
+    }
+    
+    #about-usFRTH {
+        bottom: 15%;
+        right: 40px;
+    }
+    
+    #aboutGAMEFRT {
+        bottom: 14%;
+        right: 40px;
+    }
+    
+    #about-tmFRTH {
+        right: 15%;
+        bottom: 55%;
+        height: 20px !important;
+        width: 20px !important;
+    }
 }
-  #aboutGAMEFRT {
-    bottom: 14%;
-    right: 40px;
-}
-#about-tmFRTH {
-    right: 15%;
-    bottom: 55%;
-    height: 20px !important;
-    width: 20px !important;
-     
-}
-}
-@media screen and {min-width: 1282px){
-      .slider img   {
+
+@media screen and (min-width: 1282px){
+    .slider img {
         width: 100%;
         height: auto !important;
-       
-                   }
+    }
 }
-@media screen and {min-width: 1387px){
-     .slider    {
+
+@media screen and (min-width: 1387px){
+    .slider {
         width: 100%;
         height: auto !important;
-       
-                   }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
