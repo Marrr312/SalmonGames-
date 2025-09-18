@@ -25,7 +25,7 @@
  
 .gamepicture12 {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: auto 5% auto 5%;
 
 }
@@ -139,19 +139,19 @@
 @media  screen and (min-width:769px) {
  .gameabout p{
         font-size: 34px;
-        font-weight:700 !important;
+        font-weight: 700 !important;
     }
 .gamepicture12{
     margin-right: 6% !important;
     
 }
 #pic3, #pic4{
-     width: 35vw !important;
+     width: 45vw !important;
      height: auto !important;
 }
 #pic1, #pic2{
   
-  width: 35vw !important;
+  width: 45vw !important;
   height:auto !important;
  
 }
@@ -162,6 +162,7 @@
 }
 
 }
+
 
 
 
