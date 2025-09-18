@@ -1,167 +1,174 @@
- body {
-            margin: 0;
-            
-             font-family: "Montserrat Alternates", sans-serif;
-            font-weight: 800  ;
-            font-style: normal;
-            --width-photo: 70%;
-        }
+body {
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    --width-photo: 70%;
+}
+
+/* ЗАГОЛОВКИ ИГР */
 .gamename {
     margin-top: 200px;
-    margin-bottom:  00px;
+    margin-bottom: 0px;
     display: inline;
     transition: 1.5s;
     justify-content: center;
     margin-left: 10%;
 }
+
 .p {
-    
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 900;
     font-style: normal;
 }
- 
 
- 
+/* ИЗОБРАЖЕНИЯ ИГР */
 .gamepicture12 {
     display: flex;
     width: 90%;
     margin: auto 5% auto 5%;
-
 }
- #pic1, #pic2, #pic3, #pic4 {
+
+#pic1, #pic2, #pic3, #pic4 {
     width: var(--width-photo);
     justify-content: center;
 }
+
 #pic3, #pic4 {
     padding-top: 200px;
     height: 200%;
     padding-bottom: 100px;
 }
+
 #pic1, #pic2 {
     margin-left: 0%;
     margin-right: 0%;
     height: 432px;
 }
 
+/* МИНИ-КНОПКИ */
 .us_mini_button {
-  position: absolute;
+    position: absolute;
     margin-top: 0;
-     margin-bottom: 330px;
-     margin-left: 60%;
-     padding-bottom: 200px;
-     
-    }
+    margin-bottom: 330px;
+    margin-left: 60%;
+    padding-bottom: 200px;
+}
+
 .team_mini_button {
     position: absolute;
     margin-right: 70%;
     margin-bottom: 300px;
-
-  
 }
+
 #gamename3 {
     position: absolute;
     margin-top: 0px;
     margin-left: 5%;
 }
+
 #symbiosys {
     margin-bottom: 0;
 }
-#pic1, #pic3{
+
+#pic1, #pic3 {
     padding-right: 7%;
- }
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
 @media screen and (max-width: 768px) {
     #pic3, #pic4 {
-    padding-top: 0px;
-   
-}
-#gamename3 {
-    margin-left: 45%;
-    margin-top: 200px;
-}
+        padding-top: 0px;
+    }
+    
+    #gamename3 {
+        margin-left: 45%;
+        margin-top: 200px;
+    }
+    
     .us_mini_button img {
         width: 200px;
-    position: absolute;
-    margin-top: 0;
-     margin-bottom: 330px;
-     margin-left: 60%;
-     padding-bottom: 200px;
-     
+        position: absolute;
+        margin-top: 0;
+        margin-bottom: 330px;
+        margin-left: 60%;
+        padding-bottom: 200px;
     }
-    .team_mini_button img{
-    width: 200px;
-    position: absolute;
-    margin-right: 70%;
-    margin-bottom: 300px;
-
-  
-}
-    .gameabout{
+    
+    .team_mini_button img {
+        width: 200px;
+        position: absolute;
+        margin-right: 70%;
+        margin-bottom: 300px;
+    }
+    
+    .gameabout {
         font-size: 24px;
     }
+    
     .gamepicture12 {
-  display: flex;
-  flex-direction: column;
-  margin: auto 10% auto 10%;
-}
-   #pic1, #pic2, #pic3, #pic4{
-  
- 
-  width: 100%;
-  height: auto;
-}
- #pic1, #pic3{
-    padding-bottom: 10%;
- }
-
-    
-}
-@media  screen and (max-width: 1115px) {
-     .us_mini_button img {
-        width: 300px;
-    position: absolute;
-    margin-top: 0;
-     margin-bottom: 330px;
-     margin-left: 60%;
-     padding-bottom: 200px;
-     
+        display: flex;
+        flex-direction: column;
+        margin: auto 10% auto 10%;
     }
-    .team_mini_button img{
-    width: 300px;
-    position: absolute;
-    margin-right: 70%;
-    margin-bottom: 300px;
-
-  
-}
     
+    #pic1, #pic2, #pic3, #pic4 {
+        width: 100%;
+        height: auto;
+    }
+    
+    #pic1, #pic3 {
+        padding-bottom: 10%;
+    }
 }
-@media  screen and (min-width:769px) {
- .gameabout p{
+
+/* ПЛАНШЕТНАЯ ВЕРСИЯ */
+@media screen and (max-width: 1115px) {
+    .us_mini_button img {
+        width: 300px;
+        position: absolute;
+        margin-top: 0;
+        margin-bottom: 330px;
+        margin-left: 60%;
+        padding-bottom: 200px;
+    }
+    
+    .team_mini_button img {
+        width: 300px;
+        position: absolute;
+        margin-right: 70%;
+        margin-bottom: 300px;
+    }
+}
+
+/* ДЕСКТОПНАЯ ВЕРСИЯ */
+@media screen and (min-width: 769px) {
+    .gameabout p {
         font-size: 34px;
         font-weight: 700 !important;
     }
-.gamepicture12{
-    margin-right: 6% !important;
     
-}
-#pic3, #pic4{
-     width: 45vw !important;
-     height: auto !important;
-}
-#pic1, #pic2{
-  
-  width: 45vw !important;
-  height:auto !important;
- 
-}
-#gamename3 {
-    height: 300px;
-    width: auto;
-    margin-top: 50px;
+    .gamepicture12 {
+        margin-right: 6% !important;
+    }
+    
+    #pic3, #pic4 {
+        width: 45vw !important;
+        height: auto !important;
+    }
+    
+    #pic1, #pic2 {
+        width: 45vw !important;
+        height: auto !important;
+    }
+    
+    #gamename3 {
+        height: 300px;
+        width: auto;
+        margin-top: 50px;
+    }
 }
 
-}
 
 
 
