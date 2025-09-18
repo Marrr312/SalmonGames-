@@ -21,6 +21,8 @@ body {
     font-weight: 900;
     font-style: normal;
     font-size: 44px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /* ИЗОБРАЖЕНИЯ ИГР */
@@ -169,6 +171,7 @@ body {
         margin-top: 50px;
     }
 }
+
 
 
 
