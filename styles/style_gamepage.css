@@ -138,7 +138,7 @@
 }
 @media  screen and (min-width:769px) {
  .gameabout p{
-        font-size: 54px !important;
+        font-size: 34px !important;
         font-weight:800 !important;
     }
 .gamepicture12{
@@ -146,12 +146,12 @@
     
 }
 #pic3, #pic4{
-     width: 35vw !important;
+     width: 45vw !important;
      height: auto;
 }
 #pic1, #pic2{
   
-  width: 35vw !important;
+  width: 45vw !important;
   height:auto;
  
 }
@@ -162,6 +162,7 @@
 }
 
 }
+
 
 
 
